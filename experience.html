@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Experience | SuperiorCSAT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand-strip"><span class="brand-mark">SC</span></div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="experience.html" class="active">Experience</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="industries.html">Industries Served</a>
+    <a href="team.html">Our Team</a>
+    <a href="faqs.html">FAQs</a>
+    <a href="blog.html">Blog</a>
+  </nav>
+</header>
+
+<div class="hero-banner" style="background-image:linear-gradient(rgba(10,12,20,0.5),rgba(10,12,20,0.5)); ">
+  <div class="placeholder-img" style="position:absolute; inset:0; z-index:0;">Hero photo placeholder — team meeting</div>
+  <div class="wrap"><h1>Experience</h1></div>
+</div>
+
+<section>
+  <div class="wrap" style="max-width:820px;">
+    <p class="lede">With a combined 50+ years of leadership experience across our team, we bring real-world IT expertise to every engagement. Serving Lake Worth and Palm Beach counties, Simi Valley, CA, and clients nationally, we deliver results that move organizations forward — not just projects that get completed.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap" style="max-width:820px;">
+    <ul class="value-list">
+      <li><strong>Your operations run smoother</strong> because we've managed large-scale IT environments and know exactly what breaks — and how to prevent it. We've led complex digital transformation initiatives across finance, healthcare, retail, and education.</li>
+      <li><strong>Your customers stay</strong> because your systems work. We've built and refined change control processes and SLA adherence programs that directly reduce client attrition and raise satisfaction scores.</li>
+      <li><strong>Your team performs at a higher level.</strong> Our hands-on mentorship and technical coaching cultivate critical thinking, collaboration, and lasting professional growth at every level of your organization.</li>
+      <li><strong>Your security posture is stronger.</strong> We've deployed secure, scalable IT solutions that align with business objectives and reduce risk across your entire infrastructure.</li>
+      <li><strong>Your people become champions of technology.</strong> We've delivered workshops, training sessions, and practical education on emerging technologies that stick — because we focus on application, not just theory.</li>
+      <li><strong>Your investment in technology pays off.</strong> We routinely support students and professionals in research projects, technical problem-solving, and real-world IT application — building skills that produce measurable business value.</li>
+      <li><strong>Above all, your organization builds a culture of continuous improvement.</strong> We advocate for hands-on learning approaches that strengthen critical thinking and drive lasting technology adoption across your teams.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="chart-wrap">
+      <h4>SuperiorCSAT — Focus Areas</h4>
+      <canvas id="focusChart" width="380" height="300"></canvas>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Contact Us</h4>
+        <p>Contact us today for a free, no obligation consultation and discover how personalized service can transform your business into lasting client success.</p>
+        <p>SuperiorCSAT LLC<br>Lake Worth, Florida 33467<br>Simi Valley, California 93065</p>
+        <p>(561) 444-8516<br><a href="mailto:info@superiorcsat.com">info@superiorcsat.com</a></p>
+        <p><a href="https://www.linkedin.com/in/sashaaross/" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+      <div>
+        <h4>Get In Touch</h4>
+        <div style="border-radius:6px; overflow:hidden; border:1px solid var(--divider);">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2-uV7keIHKjkDBPVkNZN3l_u1GclRd5NCX2jr9xeQ63DlfA/viewform?embedded=true" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0" title="Contact form">Loading…</iframe>
+        </div>
+      </div>
+      <div>
+        <h4>Stay Connected</h4>
+        <p>We help local businesses turn customers into repeat buyers resulting in 5-star reviews.</p>
+        <div class="footer-form">
+          <input type="email" placeholder="Email address">
+          <button class="pill-btn gold" style="width:100%; text-align:center; background:none; cursor:pointer;">Sign up</button>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© Copyright 2026 SuperiorCSAT LLC. All rights reserved. All registered trademarks herein are the property of their respective owners.</p>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>
+  var ctx = document.getElementById('focusChart').getContext('2d');
+  var data = [
+    {label:'Customer Service & Support', value:50, color:'#1b4f6b'},
+    {label:'Process Creation', value:20, color:'#2f6b3a'},
+    {label:'Education', value:15, color:'#3ba0c9'},
+    {label:'Cybersecurity', value:15, color:'#d97b3f'}
+  ];
+  var total = data.reduce(function(s,d){return s+d.value;},0);
+  var cx = 190, cy = 130, r = 100;
+  var start = -Math.PI/2;
+  data.forEach(function(d){
+    var angle = (d.value/total) * Math.PI * 2;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.arc(cx,cy,r,start,start+angle);
+    ctx.closePath();
+    ctx.fillStyle = d.color;
+    ctx.fill();
+    start += angle;
+  });
+  var legendY = 250;
+  var legendX = 15;
+  data.forEach(function(d){
+    ctx.fillStyle = d.color;
+    ctx.fillRect(legendX, legendY, 12, 12);
+    ctx.fillStyle = '#12151f';
+    ctx.font = '11px Inter, sans-serif';
+    ctx.fillText(d.label, legendX+16, legendY+10);
+    legendY += 18;
+  });
+</script>
+</body>
+</html>
