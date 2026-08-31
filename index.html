@@ -6,13 +6,13 @@
 <title>SuperiorCSAT | IT Consulting & Teaching — Lake Worth, FL</title>
 <meta name="description" content="Expert IT consulting, technology teaching & cybersecurity education in Lake Worth, FL. SuperiorCSAT helps businesses transform and exceed expectations.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="brand-strip"><span class="brand-mark">SC</span></div>
+  <div class="brand-strip"><a class="brand-mark" href="index.html" aria-label="SuperiorCSAT home"><img src="assets/Gallery images/SuperiorCSAT logo.png" alt="SuperiorCSAT"></a></div>
   <nav class="main-nav">
     <a href="index.html" class="active">Home</a>
     <a href="experience.html">Experience</a>
@@ -22,33 +22,53 @@
     <a href="faqs.html">FAQs</a>
     <a href="blog.html">Blog</a>
   </nav>
+  <a class="header-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSe2-uV7keIHKjkDBPVkNZN3l_u1GclRd5NCX2jr9xeQ63DlfA/viewform" target="_blank" rel="noopener">Get Started</a>
+  <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
 </header>
-
 <section class="hero-plain">
-  <div class="wrap">
-    <p class="eyebrow">IT Consulting &amp; Technology Teaching</p>
-    <h1>We Turn Technology Into<br>Your Competitive Advantage</h1>
-    <p class="lede">Expert IT consulting, hands-on training, and cybersecurity that keep your business secure, efficient, and one step ahead.</p>
-    <a class="btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe2-uV7keIHKjkDBPVkNZN3l_u1GclRd5NCX2jr9xeQ63DlfA/viewform" target="_blank" rel="noopener">Get a Free, No Obligation Assessment</a>
+  <div class="banner-layout">
+    <!-- Left Column: Content -->
+    <div class="banner-text">
+      <p class="eyebroww">IT Consulting &amp; Technology Teaching</p>
+      <h1>We Turn Technology Into<br>Your Competitive Advantage</h1>
+      <p class="lede">Expert IT consulting, hands-on training, and cybersecurity that keep your business secure, efficient, and one step ahead.</p>
+      <a class="btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe2-uV7keIHKjkDBPVkNZN3l_u1GclRd5NCX2jr9xeQ63DlfA/viewform" target="_blank" rel="noopener">Get a Free, No Obligation Assessment</a>
+    </div>
+
+    <!-- Right Column: Image with Animations -->
+    <div class="banner-media">
+      <div class="glow-card">
+        <img src="assets/Gallery images/SuperiorCSAT logo.png" alt="SuperiorCSAT Logo">
+      </div>
+    </div>
   </div>
 </section>
 
-<section>
+<section class="service-objectives">
   <div class="wrap">
-    <p class="eyebrow">Services Overview</p>
-    <div class="industry-grid" style="grid-template-columns: repeat(3,1fr);">
-      <div>
+    <p class="eyebrow">Service Objective</p>
+    <div class="service-objectives-grid">
+      <article class="service-objective-card">
+        <span class="service-objective-tag">Trusted</span>
+        <div class="service-objective-copy">
         <h3>Expert Industry Guidance</h3>
         <p>At SuperiorCSAT, we specialize in developing customized IT strategies that align perfectly with your business goals. Our expert consultants work closely with you to ensure your technological investments yield maximum returns.</p>
-      </div>
-      <div>
+        </div>
+      </article>
+      <article class="service-objective-card">
+        <span class="service-objective-tag">Secure</span>
+        <div class="service-objective-copy">
         <h3>Innovative Technology Implementation</h3>
         <p>We deliver cutting-edge technology solutions designed to enhance efficiency and foster growth. Our team is equipped to implement the latest innovations to keep your business competitive and adaptive.</p>
-      </div>
-      <div>
+        </div>
+      </article>
+      <article class="service-objective-card">
+        <span class="service-objective-tag">Innovative</span>
+        <div class="service-objective-copy">
         <h3>Comprehensive Support Services</h3>
         <p>Our support services extend beyond implementation, offering continuous assistance to address any issues and optimize your IT environment. Count on us for unwavering support every step of the way.</p>
-      </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -56,7 +76,7 @@
 <hr class="section-divider">
 
 <section>
-  <div class="wrap" style="max-width:760px; text-align:center; margin:0 auto;">
+  <div class="wrap" style="max-width:1100px; text-align:center; margin:0 auto;">
     <p class="eyebrow">Our Mission</p>
     <p class="lede" style="margin:0 auto;">Our mission is to empower organizations to achieve their greatest potential through innovative technology solutions, strategic partnerships, expert teaching and mentorship, and unwavering commitment to client success. We deliver measurable impact by optimizing your existing investments, driving digital transformation through comprehensive education and training, and exceeding expectations at every turn—so you can confidently lead, adapt, innovate, and thrive in a rapidly changing world.</p>
   </div>
@@ -65,49 +85,90 @@
 <hr class="section-divider">
 
 <section>
-  <div class="wrap">
-    <h2 style="text-align:center; margin-bottom:36px;">Tailored Teaching &amp; Consulting Services</h2>
-    <div class="industry-grid" style="grid-template-columns: repeat(4,1fr); text-align:center;">
-      <a href="team.html"><h3 style="font-size:1.15rem;">About</h3></a>
-      <a href="experience.html"><h3 style="font-size:1.15rem;">Experience</h3></a>
-      <a href="teaching.html"><h3 style="font-size:1.15rem;">Teaching Philosophy</h3></a>
-      <a href="industries.html"><h3 style="font-size:1.15rem;">Projects &amp; Case Studies</h3></a>
+  <div class="wrap tailored-services">
+    <div class="tailored-services-copy">
+      <h2>Tailored Teaching &amp; Consulting Services</h2>
+      <p class="lede">We believe true technology adoption happens when people understand the "why" behind the solutions. Our teaching philosophy centers on empowering tomorrow's leaders through dynamic, practical learning experiences.</p>
+      <div class="tailored-service-links">
+        <a class="tailored-service-link" href="team.html" target="_blank" rel="noopener">
+          <span class="tailored-service-number">01</span>
+          <span><strong>About</strong><small>Meet the people behind the work.</small></span>
+          <span class="tailored-service-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="tailored-service-link" href="experience.html" target="_blank" rel="noopener">
+          <span class="tailored-service-number">02</span>
+          <span><strong>Experience</strong><small>See the expertise we bring to every engagement.</small></span>
+          <span class="tailored-service-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="tailored-service-link" href="teaching.html" target="_blank" rel="noopener">
+          <span class="tailored-service-number">03</span>
+          <span><strong>Teaching Philosophy</strong><small>Learn how we turn knowledge into confidence.</small></span>
+          <span class="tailored-service-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="tailored-service-link" href="industries.html" target="_blank" rel="noopener">
+          <span class="tailored-service-number">04</span>
+          <span><strong>Projects &amp; Case Studies</strong><small>Explore practical outcomes across industries.</small></span>
+          <span class="tailored-service-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </div>
-    <p class="lede" style="max-width:760px; margin:36px auto 0; text-align:center;">We believe true technology adoption happens when people understand the "why" behind the solutions. Our teaching philosophy centers on empowering tomorrow's leaders through dynamic, practical learning experiences that combine theoretical knowledge with real-world applications.</p>
+    <figure class="tailored-services-media">
+      <img src="assets/Gallery images/instructor teaching a class.jpg" alt="Instructor teaching a technology class">
+      <figcaption>Practical learning for real-world technology adoption.</figcaption>
+    </figure>
   </div>
 </section>
 
 <hr class="section-divider">
 
-<section>
-  <div class="wrap" style="max-width:820px;">
-    <p>SuperiorCSAT is a leading IT consulting and teaching firm dedicated to transforming technology into real-world success for every client. Our mission is to provide personalized, innovative solutions that empower businesses and individuals to achieve optimal outcomes in today's digital environment.</p>
-    <p>With over 30 years of proven leadership, founder Sasha Ross leads a SuperiorCSAT team with over 50 years of collective experience in IT consulting, service management, and technical education—successfully guiding organizations across finance, education, cybersecurity, technology, and HVAC to drive growth, efficiency, and customer satisfaction.</p>
-    <p>We believe technology is only as powerful as the people behind it. That's why we focus on tailored teaching and consulting, bridging knowledge and innovation through engaging, practical learning experiences.</p>
+<section class="company-cta" aria-labelledby="company-cta-title">
+  <div class="company-marquee company-marquee-top" aria-hidden="true">
+    <div class="company-marquee-track">
+      <span>IT Strategy <b>✦</b></span><span>Cybersecurity <b>✦</b></span><span>Technical Education <b>✦</b></span><span>Customer Success <b>✦</b></span><span>IT Strategy <b>✦</b></span><span>Cybersecurity <b>✦</b></span>
+    </div>
+  </div>
+  <div class="company-marquee company-marquee-middle" aria-hidden="true">
+    <div class="company-marquee-track">
+      <span>Practical Learning <b>✦</b></span><span>Digital Transformation <b>✦</b></span><span>Secure Systems <b>✦</b></span><span>Measurable Outcomes <b>✦</b></span><span>Practical Learning <b>✦</b></span><span>Digital Transformation <b>✦</b></span>
+    </div>
+  </div>
+  <div class="company-marquee company-marquee-bottom" aria-hidden="true">
+    <div class="company-marquee-track">
+      <span>Leadership <b>✦</b></span><span>Innovation <b>✦</b></span><span>Business Growth <b>✦</b></span><span>Technology With Purpose <b>✦</b></span><span>Leadership <b>✦</b></span><span>Innovation <b>✦</b></span>
+    </div>
+  </div>
+  <div class="wrap company-cta-content">
+    <div class="company-cta-panel">
+      <div class="company-cta-copy">
+        <p>SuperiorCSAT is a leading IT consulting and teaching firm dedicated to transforming technology into real-world success for every client. Our mission is to provide personalized, innovative solutions that empower businesses and individuals to achieve optimal outcomes in today's digital environment.</p>
+        <p>With over 30 years of proven leadership, founder Sasha Ross leads a SuperiorCSAT team with over 50 years of collective experience in IT consulting, service management, and technical education—successfully guiding organizations across finance, education, cybersecurity, technology, and HVAC to drive growth, efficiency, and customer satisfaction.</p>
+        <p>We believe technology is only as powerful as the people behind it. That's why we focus on tailored teaching and consulting, bridging knowledge and innovation through engaging, practical learning experiences.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <hr class="section-divider">
 
-<section>
+<section class="testimonials-section">
   <div class="wrap">
-    <p class="eyebrow" style="text-align:center; display:block;">What Our Clients Say</p>
-    <div class="industry-grid" style="grid-template-columns: repeat(2,1fr); margin-top:30px;">
-      <div class="result-card" style="text-align:left;">
-        <p style="color:var(--navy-900);">"SuperiorCSAT completely transformed how our Palm Beach Counties company manages IT. Their cybersecurity assessment identified vulnerabilities we didn't know existed, and within 60 days our systems were fully protected. Best IT investment we've ever made."</p>
-        <p style="color:var(--gold); font-weight:600; margin:0;">Marcus T., Director of Operations</p>
+    <p class="eyebrow testimonials-eyebrow">What Our Clients Say</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"SuperiorCSAT completely transformed how our Palm Beach Counties company manages IT. Their cybersecurity assessment identified vulnerabilities we didn't know existed, and within 60 days our systems were fully protected. Best IT investment we've ever made."</p>
+        <p class="testimonial-author">Marcus T., Director of Operations</p>
       </div>
-      <div class="result-card" style="text-align:left;">
-        <p style="color:var(--navy-900);">"The change management training SuperiorCSAT delivered to our leadership team was a game-changer. Our Palm Beach County healthcare organization saw measurable improvements in team adoption and customer satisfaction scores within the first quarter."</p>
-        <p style="color:var(--gold); font-weight:600; margin:0;">Sandra R., VP of Human Resources</p>
+      <div class="testimonial-card">
+        <p>"The change management training SuperiorCSAT delivered to our leadership team was a game-changer. Our Palm Beach County healthcare organization saw measurable improvements in team adoption and customer satisfaction scores within the first quarter."</p>
+        <p class="testimonial-author">Sandra R., VP of Human Resources</p>
       </div>
-      <div class="result-card" style="text-align:left;">
-        <p style="color:var(--navy-900);">"We brought SuperiorCSAT in to help our HVAC company streamline operations and train our team on new technology. Their hands-on approach and deep knowledge of our industry made all the difference. We've seen real results."</p>
-        <p style="color:var(--gold); font-weight:600; margin:0;">Kevin D., General Manager</p>
+      <div class="testimonial-card">
+        <p>"We brought SuperiorCSAT in to help our HVAC company streamline operations and train our team on new technology. Their hands-on approach and deep knowledge of our industry made all the difference. We've seen real results."</p>
+        <p class="testimonial-author">Kevin D., General Manager</p>
       </div>
-      <div class="result-card" style="text-align:left;">
-        <p style="color:var(--navy-900);">"Sasha and Darrel helped us navigate a complex digital transformation across our Simi Valley offices. The IT consulting roadmap they created was clear, actionable, and delivered on time. Highly recommend SuperiorCSAT."</p>
-        <p style="color:var(--gold); font-weight:600; margin:0;">Theresa M., Chief Technology Officer</p>
+      <div class="testimonial-card">
+        <p>"Sasha and Darrel helped us navigate a complex digital transformation across our Simi Valley offices. The IT consulting roadmap they created was clear, actionable, and delivered on time. Highly recommend SuperiorCSAT."</p>
+        <p class="testimonial-author">Theresa M., Chief Technology Officer</p>
       </div>
     </div>
   </div>
@@ -116,25 +177,23 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div>
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html" aria-label="SuperiorCSAT home"><img src="assets/Gallery images/SuperiorCSAT logo.png" alt="SuperiorCSAT"></a>
+        <p>Transforming technology into practical business outcomes through consulting, teaching, and trusted partnership.</p>
+        <a class="footer-cta" href="mailto:sasha@superiorcsat.com" target="_blank" rel="noopener">Start a conversation <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="footer-contact">
         <h4>Contact Us</h4>
         <p>Contact us today for a free, no obligation consultation and discover how personalized service can transform your business into lasting client success.</p>
         <p>SuperiorCSAT LLC<br>Lake Worth, Florida 33467<br>Simi Valley, California 93065</p>
         <p>(561) 444-8516<br><a href="mailto:info@superiorcsat.com">info@superiorcsat.com</a></p>
-        <p><a href="https://www.linkedin.com/in/sashaaross/" target="_blank" rel="noopener">LinkedIn</a></p>
       </div>
-      <div>
-        <h4>Get In Touch</h4>
-        <div style="border-radius:6px; overflow:hidden; border:1px solid var(--divider);">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe2-uV7keIHKjkDBPVkNZN3l_u1GclRd5NCX2jr9xeQ63DlfA/viewform?embedded=true" width="100%" height="420" frameborder="0" marginheight="0" marginwidth="0" title="Contact form">Loading…</iframe>
-        </div>
-      </div>
-      <div>
+      <div class="footer-connect">
         <h4>Stay Connected</h4>
         <p>We help local businesses turn customers into repeat buyers resulting in 5-star reviews.</p>
+        <p><a href="https://www.linkedin.com/in/sashaaross/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></p>
         <div class="footer-form">
-          <input type="email" placeholder="Email address">
-          <button class="pill-btn gold" style="width:100%; text-align:center; background:none; cursor:pointer;">Sign up</button>
+          <a class="pill-btn gold" type="button" href="mailto:info@superiorcsat.com">Sign up</a>
         </div>
       </div>
     </div>
