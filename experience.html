@@ -81,7 +81,7 @@
     {label:'Customer Service & Support', value:50, color:'#1b4f6b'},
     {label:'Process Creation', value:20, color:'#2f6b3a'},
     {label:'Education', value:15, color:'#3ba0c9'},
-    {label:'Cybersecurity', value:15, color:'#d97b3f'}
+    {label:'Tool Optimization', value:15, color:'#d97b3f'}
   ];
   var total = data.reduce(function(s,d){return s+d.value;},0);
   var cx = 190, cy = 130, r = 100;
@@ -96,7 +96,7 @@
     ctx.fill();
     start += angle;
   });
-  var legendY = 250;
+  var legendY = 235;
   var legendX = 15;
   data.forEach(function(d){
     ctx.fillStyle = d.color;
